@@ -1,19 +1,33 @@
-import React from 'react'
+import React, { createRef, useEffect, useState } from 'react'
 import BestSellers from '../components/BestSellers/BestSellers';
 
 import Hero from '../components/Hero';
 import OtherProducts from '../components/OtherProducts/OtherProducts';
 import Contact from '../components/Contact';
-// import Footer from '../components/Footer';
+
+
 
 const Home = () => {
+    const [val, setVal] = useState('');
+
+    const arrival = createRef(null)
+    const best = createRef(null)
+
+    useEffect(() => {
+        if (val === 'arrivals') {
+            arrival.current?.scrollIntoView({ behavior: 'smooth' });
+        } else if (val === 'best') {
+            best.current?.scrollIntoView({ behavior: 'smooth' });
+        }
+        setVal('')
+    })
+
     return (
         <div>
-            <Hero />
-            <BestSellers />
-            <OtherProducts />
+            <Hero sendRef={setVal} />
+            <BestSellers ref={best} />
+            <OtherProducts ref={arrival} />
             <Contact />
-            {/* <Footer /> */}
         </div>
     )
 }

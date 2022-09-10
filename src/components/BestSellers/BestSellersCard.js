@@ -2,9 +2,8 @@ import React from 'react'
 
 const BestSellersCard = (props) => {
     return (
-        <div className='bestSellerCard row'>
+        <div className='bestSellerCard col'>
             <img className='bestImage' src={props.image} alt='' />
-            <div className='dividerV'></div>
             <div className='cardInfo col'>
                 <h2>{props.name}</h2>
                 <p className='cardSub'>{props.subName}</p>

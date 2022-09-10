@@ -73,7 +73,6 @@ textarea:focus {
 /*---------IMPORTS--------*/
 
 @import url('./styles/hero.css');
-@import url('./styles//header.css');
 @import url('./styles//bestSellers.css');
 @import url('./styles//otherProducts.css');
 @import url('./styles//contact.css');

@@ -9,8 +9,8 @@
 }
 
 .otherProducts {
-    justify-content: space-between;
-    padding-top: 4rem;
+    padding-top: 6rem;
+    gap: 10rem
 }
 
 .otherProductsCont {
@@ -19,6 +19,11 @@
 
 .otherProductsCard {
     gap: 6rem;
+    padding-right: 2.5rem;
+}
+
+.otherProductsCard:hover {
+    background-color: var(--secondary-text);
 }
 
 .prodImg {
@@ -29,6 +34,10 @@
     gap: 1rem;
     color: var(--primary-text);
     justify-content: center;
+}
+
+.prodInfo:hover {
+    color: var(--primary-color);
 }
 
 .prodInfo span {
