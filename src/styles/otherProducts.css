@@ -1,0 +1,44 @@
+.otherProductsSec {
+    padding: 6rem 20rem;
+    background-color: var(--primary-color);
+}
+
+.otherProducts {
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+
+.otherProductsCont {
+    gap: 4rem;
+}
+
+.otherProductsCard {
+    gap: 6rem;
+}
+
+.prodImg {
+    width: 150px;
+}
+
+.prodInfo {
+    gap: 1rem;
+    color: var(--primary-text);
+    justify-content: center;
+}
+
+.prodInfo span {
+    font-style: italic;
+}
+
+.otherProdDesc {
+    width: 600px;
+    justify-content: center;
+    padding: 2rem;
+
+}
+
+.otherProdDesc p {
+    text-align: justify;
+    line-height: 30px;
+    color: var(--primary-text);
+}

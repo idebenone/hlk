@@ -1,0 +1,45 @@
+.bestSellers {
+    padding: 6rem 20rem;
+    /* height: 100vh; */
+    background-color: var(--primary-color);
+}
+
+.cardCont {
+    gap: 4rem;
+}
+
+.bestSellerCard {
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+
+.bestImage {
+    width: 400px;
+    height: 100%;
+    box-shadow: 40px 40px 0px var(--secondary-color);
+}
+
+.cardInfo {
+    padding: 2rem;
+    width: 600px;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.cardInfo h2 {
+    font-size: 2rem;
+    color: var(--primary-text);
+}
+
+.cardSub {
+    font-size: 1.2rem !important;
+    font-style: italic;
+    color: var(--primary-text);
+}
+
+.cardDesc {
+    font-size: 01rem;
+    color: var(--secondary-text);
+    line-height: 30px;
+    text-align: justify;
+}

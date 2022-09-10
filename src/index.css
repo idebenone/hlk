@@ -1,13 +1,66 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400&display=swap');
+
+:root {
+  --primary-color: #171B19;
+  --secondary-color: #CB6100;
+
+  --primary-text: #ffffffbe;
+  --secondary-text: #acabab;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar {
+  display: none;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: none;
+}
+
+
+/*GLOBAL*/
+.row,
+.col,
+.center {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.center {
+  align-items: center;
+}
+
+button,
+input {
+  border: none;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
+
+/*---------IMPORTS--------*/
+
+@import url('./styles/hero.css');
+@import url('./styles//header.css');
+@import url('./styles//bestSellers.css');
+@import url('./styles//otherProducts.css');
