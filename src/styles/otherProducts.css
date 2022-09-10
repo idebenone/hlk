@@ -3,6 +3,11 @@
     background-color: var(--primary-color);
 }
 
+.otherProductsSec h1 {
+    font-size: 2rem;
+    color: var(--primary-text);
+}
+
 .otherProducts {
     justify-content: space-between;
     padding-top: 4rem;

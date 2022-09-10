@@ -18,7 +18,7 @@ const OtherProducts = () => {
 
     return (
         <div className='otherProductsSec'>
-            <h1>Other Products</h1>
+            <h1>OTHER PRODUCTS</h1>
             <div className='otherProducts row'>
                 <div className='col otherProductsCont'>
                     {

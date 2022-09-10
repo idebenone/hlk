@@ -4,7 +4,7 @@
   --primary-color: #171B19;
   --secondary-color: #CB6100;
 
-  --primary-text: #ffffffbe;
+  --primary-text: #ffffff93;
   --secondary-text: #acabab;
 
 }
@@ -59,6 +59,16 @@ textarea:focus {
   outline: none;
 }
 
+.dividerV {
+  background-color: #acabab;
+  width: 1px;
+  margin: 0rem 2rem;
+}
+
+.dividerH {
+  background-color: #acabab;
+  height: 1px;
+}
 
 /*---------IMPORTS--------*/
 

@@ -4,6 +4,12 @@
     background-color: var(--primary-color);
 }
 
+
+.bestSellers h1 {
+    font-size: 2rem;
+    color: var(--primary-text);
+}
+
 .cardCont {
     gap: 4rem;
 }

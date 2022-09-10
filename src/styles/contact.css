@@ -7,20 +7,31 @@
     gap: 4rem;
 }
 
-.msg {
-    width: 100%;
+.map {
+    border: solid 0.1px var(--secondary-color);
 }
 
 iframe {
     width: 650px;
     height: 550px;
     border-radius: 5px;
+    filter: grayscale(100%) invert(92%) contrast(100%);
+    padding: 1rem;
+}
+
+.msg {
+    width: 100%;
 }
 
 input,
 textarea {
     padding: 1rem;
     border-radius: 5px;
+}
+
+label {
+    color: var(--primary-text);
+    font-weight: 500;
 }
 
 form {

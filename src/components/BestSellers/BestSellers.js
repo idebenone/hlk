@@ -16,7 +16,7 @@ const BestSellers = () => {
 
     return (
         <div className='bestSellers'>
-            <h1>Best Sellers</h1>
+            <h1>BEST SELLERS.</h1>
             <div className='cardCont col'>
                 {
                     data.map((val, i) => (
