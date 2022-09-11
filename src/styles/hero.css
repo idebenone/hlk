@@ -61,6 +61,17 @@
     font-weight: 500;
 }
 
+.prodBut {
+    gap: 4rem;
+}
+
+.prodBut button {
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 1px var(--primary-text);
+    color: var(--primary-text);
+    font-weight: 800
+}
+
 .iconCont {
     margin-top: 4rem;
     padding: 1rem;

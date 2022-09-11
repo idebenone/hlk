@@ -10,11 +10,12 @@
 }
 
 .cardCont {
-    gap: 6rem;
+    gap: 5rem;
 }
 
 .bestSellerCard {
     padding-top: 4rem;
+    height: 780px;
 }
 
 .bestImage {
@@ -31,7 +32,8 @@
     padding: 2rem;
     position: relative;
     bottom: 150px;
-    left: 25px;
+    left: 45px;
+    z-index: 10;
 }
 
 .cardInfo h2 {

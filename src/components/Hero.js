@@ -28,18 +28,20 @@ const Hero = (props) => {
                             <h1>SILK <br /> HOUSE</h1>
                         </div>
                         <div className='dividerV'></div>
-                        <p className='desc center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a type
-                            specimen book.
-                            <br />
-                            <br />
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a type
-                            specimen book.
-                        </p>
-                        <button onClick={() => props.sendRef('best')} >PRODUCTS</button>
+                        <div className='col center prodBut'>
+                            <p className='desc center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type
+                                specimen book.
+                                <br />
+                                <br />
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type
+                                specimen book.
+                            </p>
+                            <button onClick={() => props.sendRef('best')} >PRODUCTS</button>
+                        </div>
                     </div>
                     <div className='row iconCont center'>
                         <img src={ig} alt='' />

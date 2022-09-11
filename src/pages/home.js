@@ -1,11 +1,13 @@
-import React, { createRef, useEffect, useState } from 'react'
+import React, { createRef, Suspense, useEffect, useState } from 'react'
 import BestSellers from '../components/BestSellers/BestSellers';
 
 import Hero from '../components/Hero';
-import OtherProducts from '../components/OtherProducts/OtherProducts';
-import Contact from '../components/Contact';
+// import OtherProducts from '../components/OtherProducts/OtherProducts';
+// import Contact from '../components/Contact';
 
 
+const OtherProducts = React.lazy(() => import('../components/OtherProducts/OtherProducts'));
+const Contact = React.lazy(() => import('../components/Contact'));
 
 const Home = () => {
     const [val, setVal] = useState('');
@@ -20,14 +22,17 @@ const Home = () => {
             best.current?.scrollIntoView({ behavior: 'smooth' });
         }
         setVal('')
-    })
+        // eslint-disable-next-line
+    }, [val])
 
     return (
         <div>
             <Hero sendRef={setVal} />
-            <BestSellers ref={best} />
-            <OtherProducts ref={arrival} />
-            <Contact />
+            <Suspense>
+                <BestSellers ref={best} fallback={<div><h1>Loading.......</h1></div>} />
+                <OtherProducts ref={arrival} />
+                <Contact />
+            </Suspense>
         </div>
     )
 }

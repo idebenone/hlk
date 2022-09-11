@@ -20,7 +20,7 @@ const Contact = forwardRef((props, ref) => (
                         <label>Message</label>
                         <textarea rows='10' style={{ resize: 'none' }} type='text' placeholder='Enter your message'></textarea>
                     </div>
-                    <button>Send</button>
+                    <button className='sendButton'>Send</button>
                 </form>
             </div>
         </div>
